@@ -1,6 +1,11 @@
-# Steps to reproduce
-1) `npm install`
-2) `npm run start:localstack` leave it running in the terminal and when it logs `Ready` continue to next step
+## Requirements
+- [nvm](https://github.com/creationix/nvm)
+- [docker](https://docs.docker.com/)
+
+## Steps to reproduce
+1) `nvm install`
+2) `npm install`
+3) `npm run start:localstack` leave it running in the terminal and when it logs `Ready` continue to next step
 3) `npm run deploy` in another terminal, if it thorws this error:
 ```sh
   Serverless plugin "serverless-localstack" not found. Make sure it's installed and listed in the "plugins" section of your serverless config file.
