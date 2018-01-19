@@ -1,0 +1,17 @@
+{
+  "name": "test-localstack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "handler.js",
+  "scripts": {
+    "start:localstack": "./startlocalstack.sh",
+    "deploy": "sls deploy -v"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "serverless": "^1.25.0",
+    "serverless-localstack": "^0.2.1"
+  }
+}

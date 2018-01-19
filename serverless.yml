@@ -1,0 +1,17 @@
+service: test-localstack
+
+provider:
+  name: aws
+  runtime: nodejs6.10
+
+functions:
+  hello:
+    handler: handler.hello
+
+plugins:
+  - serverless-localstack
+
+custom:
+  localstack:
+    host: http://localhost
+    debug: true

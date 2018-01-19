@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+docker run -it -e LOCALSTACK_HOSTNAME="localhost" -e DEBUG="1" -p 8080:8080 -p 443:443 -p 4567-4583:4567-4583 -p 4590-4593:4590-4593 -v "/private/var/folders/cg/n927_5kn599dycgy9gg5b13h0000gn/T/localstack:/tmp/localstack" -v "/var/run/docker.sock:/var/run/docker.sock" -e DOCKER_HOST="unix:///var/run/docker.sock" -e HOST_TMP_FOLDER="/private/var/folders/cg/n927_5kn599dycgy9gg5b13h0000gn/T/localstack" "localstack/localstack"
